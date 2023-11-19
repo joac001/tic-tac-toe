@@ -1,0 +1,85 @@
+.App {
+    display: grid;
+    grid-template-rows: 75vh 10vh;
+    grid-template-columns: 75vh;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.btn-restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    justify-self: center;
+
+    width: 25%;
+}
+
+.btn-restart span {
+    margin-right: 5px;
+}
+
+.my-table {
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3, 15vh);
+
+    justify-self: center;
+
+    margin-left: 5vh;
+
+    width: 50vh;
+    height: 50vh;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idx-0,
+.idx-1,
+.idx-3,
+.idx-4,
+.idx-6,
+.idx-7 {
+    border-right: 1px solid white;
+}
+
+.idx-0,
+.idx-1,
+.idx-2,
+.idx-5,
+.idx-3,
+.idx-4 {
+    border-bottom: 1px solid white;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+.cross {
+    display: flex;
+
+    user-select: none;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 50px;
+}
+
+.cross span {
+    transform: translate(30%, -25%);
+}
