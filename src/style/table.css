@@ -1,0 +1,92 @@
+.table {
+    display: grid;
+    grid-template-rows: 75vh 10vh;
+    grid-template-columns: 75vh;
+
+    width: fit-content;
+    height: fit-content;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-restart span {
+    margin-right: 5px;
+}
+
+.my-table {
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3, 15vh);
+
+    justify-self: center;
+
+    margin-left: 5vh;
+
+    width: 50vh;
+    height: 50vh;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idx-0,
+.idx-1,
+.idx-3,
+.idx-4,
+.idx-6,
+.idx-7 {
+    border-right: 1px solid white;
+}
+
+.idx-0,
+.idx-1,
+.idx-2,
+.idx-5,
+.idx-3,
+.idx-4 {
+    border-bottom: 1px solid white;
+}
+
+.playable {
+    position: absolute;
+    border: 1px solid red;
+    background-color: blue;
+}
+
+.empty {
+    width: 3vh;
+    height: 3vh;
+}
+
+.circle {
+    width: 10vh;
+    height: 10vh;
+
+    border-radius: 50%;
+    /*border: 3px solid white;*/
+}
+
+
+.cross {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+
+    width: 10vh;
+    height: 10vh;
+
+    color: white;
+    font-size: 10vh;
+}
